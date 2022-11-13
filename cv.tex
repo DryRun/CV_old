@@ -1,0 +1,431 @@
+%!TEX program = xelatex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Compact Academic CV
+% LaTeX Template
+% Version 1.0 (10/6/2012)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Dario Taraborelli (http://nitens.org/taraborelli/home)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important:
+% This template needs to be compiled using XeLaTeX
+%
+% Note: this template has the option to use the Hoefler Text font, see the
+% font configurations section below for instructions on using this font
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{article} % Document font size and paper size
+
+\usepackage{fontspec} % Allows the use of OpenType fonts
+
+\usepackage{geometry} % Allows the configuration of document margins
+\geometry{textwidth=5.5in, textheight=9in, marginparsep=7pt, marginparwidth=.6in} % Document margin settings
+\setlength\parindent{0in} % Remove paragraph indentation
+
+\usepackage[usenames,dvipsnames]{xcolor} % Custom colors
+
+\usepackage{sectsty} % Allows changing the font options for sections in a document
+\usepackage[normalem]{ulem} % Custom underlining
+\usepackage{xunicode} % Allows generation of unicode characters from accented glyphs
+\defaultfontfeatures{Mapping=tex-text} % Converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
+%\setmainfont{Garamond}
+
+\usepackage{marginnote} % For margin years
+\newcommand{\years}[1]{\strut\marginnote{\scriptsize #1} \hangindent=0.5cm} % New command for including margin years
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt} % Slightly increase the distance of the margin years from the contant
+\reversemarginpar
+
+\usepackage{enumitem}
+\usepackage{siunitx}
+
+\usepackage[xetex, bookmarks, colorlinks, breaklinks, pdftitle={David Yu - CV},pdfauthor={David Yu}]{hyperref} % PDF setup - set your name and the title of the document to be incorporated into the final PDF file meta-information
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=MidnightBlue} % Link colors
+
+%----------------------------------------------------------------------------------------
+%	FONT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+% Two font choices are available in this template, the default is Linux Libertine, available for free at: http://www.linuxlibertine.org while the secondary choice is Hoefler Text which comes bundled with Mac OSX.
+% To use Hoefler Text, comment out the Linux Libertine block below and uncomment the Hoefler Text block. You will also need to replace the "\&" characters with "\amper{}" in section titles.
+
+% Linux Libertine Font (default)
+%\setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Linux Libertine O} % Main text font
+%\setmonofont[Scale=0.8]{Monaco} % Set mono font (e.g. phone numbers)
+%\sectionfont{\mdseries\upshape\Large} % Set font options for sections
+%\subsectionfont{\mdseries\scshape\normalsize} % Set font options for subsections
+%\subsubsectionfont{\mdseries\upshape\large} % Set font options for subsubsections
+%\chardef\&="E050 % Custom ampersand character
+% Hoefler Text Font (bundled with Mac OSX)
+%\setromanfont [Ligatures={Common}, Numbers={OldStyle}]{Hoefler Text} % Main text font
+\setromanfont [Ligatures={Common}, Numbers={OldStyle}]{EB Garamond} % Main text font
+%\setmonofont[Scale=0.8]{Monaco} % Set mono font (e.g. phone numbers)
+%\setsansfont[Scale=0.9]{Optima Regular} % Set sans font, used in the main name and titles in the document
+\newcommand{\amper}{{\fontspec[Scale=.95]{Hoefler Text}\selectfont\itshape\&}} % Custom ampersand character
+\sectionfont{\rmfamily\mdseries\Large\bf} % Set font options for sections
+\subsectionfont{\rmfamily\mdseries\scshape\large} % Set font options for subsections
+\subsubsectionfont{\rmfamily\bfseries\upshape\normalsize} % Set font options for subsubsections
+
+%----------------------------------------------------------------------------------------
+\setlist[itemize]{leftmargin=0.5cm}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	CONTACT AND GENERAL INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+
+{\LARGE David R. Yu}\\[0.5cm] % Your name
+2333 W St Paul Ave. Apt 208 \\
+Chicago, IL 60647 \\
+%Mail Stop 205 \\
+%Fermilab \\
+%PO Box 500 \\
+%Batavia, IL 60510-5011\\ % Your address
+Phone: \texttt{608-347-4858}\\ % Your phone number
+%Fax: \texttt{609-924-8399}\\[.2cm] % Your fax number
+Email: \href{mailto:david_yu@brown.edu}{david\_yu@brown.edu}\\ % Your email address
+%\textsc{url}: \href{http://www.ias.edu/spfeatures/einstein/}{http://www.ias.edu/spfeatures/einstein/}\\ % Your academic/personal website
+
+
+%------------------------------------------------
+\section*{Professional Experience}
+\years{2021--present} Senior Research Associate, Brown University, CMS Experiment.
+
+\years{2016--2021} Postdoctoral Research Associate, Brown University, CMS Experiment. 
+
+\years{2011--2016} Graduate Research Assistant, University of California, Berkeley, ATLAS Experiment. 
+
+\years{2006--2009} Undergraduate Research Assistant, University of Chicago. 
+
+\years{2008} Lee Teng Accelerator Internship, Fermilab National Accelerator Laboratory. 
+
+\section*{Education}
+\years{2015}\textsc{Ph.D} in Physics, University of California, Berkeley
+\begin{quote}
+ Thesis: ``Searches for new phenomena using events with three or more charged leptons
+in $\mathrm{pp}$ collisions at $\sqrt{s}=7$\,TeV with the ATLAS detector at the LHC''
+
+ Advisor: Prof. Beate Heinemann
+\end{quote}
+
+\smallskip
+
+\years{2010}\textsc{M.Sc} in Physics, University of California, Berkeley 
+
+\smallskip
+
+\years{2009}\textsc{B.A.} in Physics and \textsc{B.S.} in Mathematics, University of Chicago
+
+
+%----------------------------------------------------------------------------------------
+%	GRANTS, HONORS AND AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section*{Fellowships \& awards}
+\years{2022, 2019} LPC Physics Center Distinguished Researcher Fellowship, Fermilab National Accelerator Laboratory.
+
+\years{2009--2014} Graduate Research Fellowship, National Science Foundation.
+
+\section*{Collaboration leadership and service}
+\years{2021--present} Deputy project manager of CMS hadronic calorimeter project. 
+
+\years{2020--2022} Convener of CMS Exotica Jets+X group. 
+
+\years{2018--2020} Convener of CMS Exotica Monte Carlo and Theory Interpretations group. 
+
+\years{2017--2019} Convener of CMS hadronic calorimeter data quality group. 
+
+\years{2017--2018} Trigger contact for CMS Exotica analysis group. 
+
+\years{2020--present} Community certified language editor. 
+
+
+\section*{Computer skills}
+\begin{itemize}[itemsep=1pt]
+    \item Languages: C++, Java, Python, Fortran, Bash, SQL.
+    \item Tools and Frameworks: ROOT, Jupyter, Coffea (columnar analysis toolkit), Docker/Singularity, Git, Subversion.
+    \item Web-related proficiencies: HTML, PHP, Javascript, Django, Flask/SQLAlchemy, AngularJS, React.
+\end{itemize}
+
+
+\section*{Selected Research Experience}
+\subsection*{Physics analysis}
+%\begin{itemize}[label={}]
+
+\years{2018--present} \textbf{Boosted dijet resonances}: co-leader of analysis group searching for Lorentz-boosted hadronic resonances with jet substructure techniques, including electroweak, Higgs, and exotic bosons. Co-author of searches for light spin-0 and spin-1 resonances decaying to quarks, and a search for Lorentz-boosted Higgs bosons decaying to bottom quarks. 
+
+\years{2019--present} \textbf{Jet substructure tagging}: developed a mass decorrelation technique for machine learning-based jet substructure taggers using biased Monte Carlo samples with uniform mass distributions. The samples are used to train substructure tagging and mass regression algorithms based on graph neural networks, with additional decorrelation techniques like adversarial training or contrastive learning. 
+
+\years{2019--present} \textbf{B hadron fragmentation fractions}: measurement of B hadron fragmentation fraction ratios using CMS ``B parking'' data set, reducing a leading systematic uncertainty for the $\mathrm{B}_{\mathrm{s}}\rightarrow\mu\mu$ branching fraction measurement (in collaboration review).
+
+\years{2019--present} \textbf{Trijet resonances}: search for new hadronic resonances decaying to three quarks or gluons (in progress).
+
+\years{2018--present} \textbf{Dark matter interpretations}: responsible for CMS dark matter summary plots, especially for reinterpretations of visible searches. Co-author of LHC Dark Matter Working Group white paper addressing $t$-channel dark matter interaction models (in progress). Contributing related studies for future colliders to ``Snowmass 2021'' community planning exercise (EF10: Dark Matter subgroup). 
+
+\years{2016--2018} \textbf{B-tagged dijet resonances}: lead author of search for dijet resonances using trigger-level b~tagging. 
+
+\years{2014--2015} \textbf{Multilepton resonances}: lead author of search for new heavy leptons producing trilepton resonances (ATLAS).
+
+\years{2011--2015} \textbf{Model-independent multilepton search}: co-author of search for new physics in generic multilepton final states (ATLAS). 
+
+
+\subsection*{Detector work}
+%\begin{itemize}[label={}]
+\years{2022-present} \textbf{Automation of HCAL calibration workflows}: leading critical developments to automate the HCAL calibration workflows, which is necessary to adapt the reconstruction to high rates of radiation damage. Creating a new raw data format based on CMS NanoAOD. 
+
+\years{2018--present} \textbf{HCAL data quality}: convener of CMS HCAL data quality subgroup. Responsible for certifying the integrity of HCAL data, developing software for monitoring tools, coordinating shifters, and maintaining an end-to-end testbed for HCAL reconstruction developments, especially related to the HCAL Phase-1 upgrade. 
+
+\years{2018--present} \textbf{HCAL monitoring with machine learning}: R\&D on machine learning applications for automated data quality monitoring.
+
+\years{2018--present} \textbf{Monte Carlo production}: coordinated Monte Carlo production for the entire CMS Exotica program in Run 2; developed tools for efficiently producing large signal grids; member of Snowmass 2021 Monte Carlo team.
+
+\years{2021} \textbf{HGCAL test beam}: system tests of CMS HGCAL SiPM-on-tile modules at the Fermilab test beam.
+
+\years{2016--2017} \textbf{HCAL online software development}: developed run control software for the operation of the CMS hadronic calorimeter. 
+
+\years{2011--2015} \textbf{Tracker-based luminosity measurement}: developed new luminosity measurement algorithms using the ATLAS inner detector, including pixel cluster, track, and vertex counting (ATLAS).
+
+\years{2013--2015} \textbf{Beamspot}: development and monitoring of the ATLAS beamspot reconstruction algorithm (ATLAS).
+
+\years{2008} \textbf{Accelerator beam monitoring}: development of beam monitoring technique using optical diffraction radiation (Lee Teng Accelerator Internship). 
+
+\years{2006--2009} \textbf{Large Area Picosecond Photodetector (LAPPD)}: designed an equal-time anode and developed a simulation of microchannel plates for picosecond-resolution timing detectors. 
+%\end{itemize}
+
+\subsection*{Collaboration leadership and service}
+%\begin{itemize}[label={}]
+
+\years{2021--present} \textbf{Deputy project manager of the CMS hadronic calorimeter}: Coordinating the HCAL operations and detector performance groups to commission the calorimeter Phase-1 upgrade for Run 3 of the LHC.
+
+\years{2020--present} \textbf{Convener of CMS Exotica Jets+X subgroup}: Responsible for the management and review of CMS Exotica analyses with large hadronic activity.
+
+\years{2018--2020} \textbf{Convener of CMS Exotica Monte Carlo and Interpretations subgroup}: Responsible for signal and background Monte Carlo production for CMS Exotica analyses, creation of summary and combined interpretation plots, and analysis preservation. Contributed to the CMS simulation infrastructure, particularly for the simulation of large signal grids and exotic long-lived particles. 
+
+\years{2017} \textbf{Exotica trigger contact}: liaison between the CMS Trigger and Exotica groups, responsible for the deployment and monitoring of triggers for CMS Exotica analyses. 
+
+\years{2020--present} \textbf{Community certified language editor}: English language editor for CMS publications. 
+
+
+%\end{itemize}
+
+
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS AND TALKS SECTION
+%----------------------------------------------------------------------------------------
+
+\section*{Publications}
+
+\subsection*{Journal Articles}
+
+CMS Collaboration. ``Inclusive search for a boosted Higgs boson and an observation of the Z boson decaying to charm quark pair in proton-proton collisions at $\sqrt{\mathrm{s}}=13$~\,TeV.'' \href{https://cds.cern.ch/record/2809929?ln=en}{CMS-PAS-HIG-21-012}. In collaboration review, to be submitted to Phys. Rev. Lett. 
+
+\smallskip
+
+CMS Collaboration. ``Inclusive search for highly boosted Higgs bosons decaying to bottom quark-antiquark pairs in proton-proton collisions at $\sqrt{s}=13$\,TeV.'' \href{https://doi.org/10.1007/JHEP12(2020)085}{J. High Energ. Phys. \textbf{2020}, 85} (2020). Citations: 19.
+
+\smallskip
+
+CMS Collaboration. ``Search for low mass vector resonances decaying into quark-antiquark pairs in proton-proton collisions at $\sqrt{s}=13$\,TeV.'' \href{https://doi.org/10.1103/PhysRevD.100.112007}{Phys. Rev. D \textbf{100}, 112007} (2019). Citations: 37.
+
+\smallskip
+
+CMS Collaboration. ``Search for low-mass quark-antiquark resonances produced in association with a photon at $\sqrt{s}=13$\,TeV.'' \href{https://doi.org/10.1103/PhysRevLett.123.231803}{Phys. Rev. Lett. \textbf{123}, 231803} (2019). Citations: 26.
+
+\smallskip
+
+CMS Collaboration. ``Search for low mass resonances decaying into bottom quark-antiquark pairs in $pp$ collisions at $\sqrt{s}=13$\,TeV.'' \href{https://doi.org/10.1103/PhysRevD.99.012005}{Phys. Rev. D \textbf{99}, 012005} (2019). Citations: 43.
+
+\smallskip
+
+CMS Collaboration. ``Inclusive search for a highly boosted Higgs boson decaying to a bottom quark-antiquark pair.'' \href{https://doi.org/10.1103/PhysRevLett.120.071802}{Phys. Rev. Lett. 120, 071802} (2018). Citations: 126.
+
+\smallskip
+
+CMS Collaboration. ``Search for low mass vector resonances decaying into quark-antiquark pairs in proton-proton collisions at $\sqrt{s}=13 $ TeV.'' \href{https://doi.org/10.1007/JHEP01(2018)097}{J. High Energ. Phys. \textbf{2018}, 97} (2018). Citations: 112.
+
+\smallskip
+
+CMS Collaboration. ``Search for narrow resonances in the b-tagged dijet mass spectrum.'' \href{https://doi.org/10.1103/PhysRevLett.120.201801}{Phys. Rev. Lett. 120, 201801} (2018). Citations: 37.
+
+\smallskip
+
+S. Chatrchyan et. al. ``Radioactive source calibration test of the CMS Hadron Endcap Calorimeter test wedge with Phase I upgrade electronics.'' \href{https://doi.org/10.1088/1748-0221/12/12/P12034}{JINST \textbf{12} P12034} (2017). Citations: 0.
+
+\smallskip
+
+ATLAS Collaboration. ``Measurement of the total cross section from elastic scattering in $pp$ collisions at  $\sqrt{s}=8$\,TeV with the ATLAS detector.'' \href{https://doi.org/10.1016/j.physletb.2016.08.020}{Phys. Lett. B 761 \textbf{2016} 158-178} (2016). Citations: 131.
+
+\smallskip
+
+ATLAS Collaboration. ``Search for heavy leptons decaying to a Z boson and a lepton in $pp$ collisions at $\sqrt{s}=8$\,TeV with the ATLAS detector.'' \href{https://doi.org/10.1007/JHEP09(2015)108}{J. High Energ. Phys. \textbf{2015}, 108} (2015). Citations: 82.
+
+\smallskip
+
+ATLAS Collaboration. ``Search for Evidence of New Physics in Events with Three Charged Leptons at $\sqrt{s}=8$\,TeV with the ATLAS Detector.'' \href{https://doi.org/10.1007/JHEP08(2015)138}{J. High Energ. Phys. \textbf{2015}, 138} (2015). Citations: 47.
+
+\smallskip
+
+ATLAS Collaboration. ``Measurement of the total cross section from elastic scattering in pp collisions at $\sqrt{s}=7$\,TeV with the ATLAS detector.'' \href{https://doi.org/10.1016/j.nuclphysb.2014.10.019}{Nuclear Physics B \textbf{889}, pp. 486-548} (2014). Citations: 206.
+
+\smallskip
+
+ATLAS Collaboration. ``Improved luminosity determination in $pp$ collisions at $\sqrt{s}=7$\,TeV using the ATLAS detector at the LHC.'' \href{https://doi.org/10.1140/epjc/s10052-013-2518-3}{Eur. Phys. J. C (2013) 73:2518} (2013). Citations: 1,097.
+
+
+%------------------------------------------------
+\subsection*{Conference Talks and Seminars}
+
+``Modified Matrix Elements for Enhanced Decorrelation in Boosted Resonance Identification, Regression, and Calibration.'' 14th International Workshop on Boosted Object Phenomenology, Reconstruction, Measurements and Searches in HEP (talk given by Jeff Krupa). August 2022. 
+
+``Searches for Hadronic Resonances at CMS.'' High Energy Physics Division Seminar, Argonne National Laboratory, November 2019.
+
+\smallskip
+
+``Searching for $\mathrm{H}(\mathrm{bb})$ at high $p_{\mathrm{T}}$.'' USCMS Annual Meeting, June 2019.
+
+\smallskip
+
+``Searches for Hadronic Resonances at CMS.'' 7$^{\mathrm{th}}$ Edition of the Large Hadron Physics Conference, May 2019. Proceedings at \href{https://doi.org/10.22323/1.350.0184}{PoS (LHCP2019) 184}.
+
+\smallskip
+
+``Dark Matter Mediator Searches.'' XII$^{\mathrm{th}}$ International on the Interconnection between Particle Physics and Cosmology, August 2018.
+
+\smallskip
+
+``Searches for Dark Matter Mediators at CMS.'' 12$^{\mathrm{th}}$ Identification of Dark Matter Conference, July 2018.
+
+\smallskip
+
+Poster: ``Search for heavy lepton resonances decaying to a $Z$ boson and a lepton in $pp$ collisions at $\sqrt{s}=8$\,TeV with the ATLAS detector.'' Breakthrough Prize Symposium, November 2015.
+
+\smallskip
+
+``Search for Heavy Leptons Producing Trilepton Resonances in $pp$ Collisions at $\sqrt{s}=8$\,TeV.'' Open presentation to collaboration [internal], March 2015.
+
+\smallskip
+
+Poster: ``ATLAS offline beam spot in 2012.'' 117th LHCC Meeting, March 2014.
+
+\smallskip
+
+``Searches for new physics in events with multiple leptons with the ATLAS detector.'' XXI. International Workshop on Deep-Inelastic Scattering and Related Subjects, April 2013. Proceedings at \href{https://doi.org/10.22323/1.191.0121}{PoS (DIS 2013) 121}.
+
+\smallskip
+
+``Luminosity Determination in 7 TeV $pp$ Collisions with the ATLAS Detector.'' APS April Meeting, April 2013.
+
+\smallskip
+
+``Vertex-Based Luminosity.'' Vertex Reconstruction Meeting [internal], October 2012.
+
+
+
+%\subsection*{Internal Notes}
+%``Inclusive search for boosted Higgs bosons produced in $pp$ collisions using $\mathrm{H}\rightarrow b\bar{b}$ decays with 2016, 2017 and 2018 data.'' \href{http://cms.cern.ch/iCMS/jsp/db_notes/noteInfo.jsp?cmsnoteid=CMS%20AN-2018/067}{CMS AN-2018/067}.
+%
+%\smallskip
+%
+%``Search for boosted light dijet resonances produced in association with a jet with 2016 and 2017 data.'' \href{http://cms.cern.ch/iCMS/jsp/db_notes/noteInfo.jsp?cmsnoteid=CMS%20AN-2017/335}{CMS AN-2017/335}.
+%
+%\smallskip
+%
+%``Search for low mass resonances decaying into bottom quark-antiquark pairs in $pp$ collisions at $\sqrt{s}=13$\,TeV.'' \href{http://cms.cern.ch/iCMS/jsp/db_notes/noteInfo.jsp?cmsnoteid=CMS%20AN-2016/384}{CMS AN-2016/384}.
+%
+%\smallskip
+%
+%``Search for narrow resonances in the b-tagged dijet mass spectrum.'' \href{http://cms.cern.ch/iCMS/jsp/db_notes/noteInfo.jsp?cmsnoteid=CMS%20AN-2016/476}{CMS AN-2016/476}.
+%
+%\smallskip
+%
+%``Search for heavy leptons producing trilepton resonances in pp collisions at $\sqrt{s}=8$\,TeV with the ATLAS detector.'' ATL-COM-PHYS-2015-076.
+%
+%\smallskip
+%
+%``Search for New Physics in Events with Three Charged Leptons.'' ATL-COM-PHYS-2014-236.
+%
+%\smallskip
+%
+%``Luminosity Measurement in $pp$ Collisions at $\sqrt{s}=7$\,TeV using Vertex Counting with the ATLAS Detector in 2011.'' ATL-COM-LUM-2013-016.
+
+
+%----------------------------------------------------------------------------------------
+%	TEACHING SECTION
+%----------------------------------------------------------------------------------------
+
+\section*{Teaching and Outreach}
+\years{2021-22}\emph{CMS Induction Course}: I gave the lecture on calorimetry at the semi-annual CMS Induction Course for newcomers. 
+
+\years{2018-present}\emph{CMS Data Analysis School}: I serve as a facilitator at the annual week-long introductory school for new CMS members. I teach courses on jets and statistics, and lead students through simplified analyses including a measurement of the $\mathrm{Z}\rightarrow\tau\tau$ cross section, a mass measurement of the top quark, and a search for dark matter in the photon plus missing transverse momentum final state. Since 2020, I have created video lectures for a virtual format school. 
+
+\years{2020}\emph{CMS Virtual Data Analysis School}: I served as a facilitator for the 2020 Virtual Data Analysis School, hosted by CERN. I taught a short course on jets, recording video lectures and remotely guiding the students through the exercises in a month-long virtual format. 
+
+\smallskip
+
+\years{2018-present}\emph{CMS Hands-On Analysis Tutorials}: I teach an annual 2-day summer course on jet reconstruction at CMS, and maintain the course materials for the exercise.
+
+\smallskip
+
+\years{2018-present}\emph{Quarknet}: I moderated masterclasses and "World Data Day" sessions, guiding high school and college students around the world through a pedagogical analysis of CMS data.
+
+\smallskip
+
+\years{2013, 2015}\emph{LBNL Nuclear Science Day for Scouts}: I taught basic concepts related to nuclear science to groups of girl and boy scouts, including hands-on activities demonstrating electrostatics, cosmic ray detection, and radiation measurement and shielding.
+
+\smallskip
+
+\years{2013-2014}\emph{Career Development Initiative for the Physical Sciences: Data Science Workshop}: I helped organize annual workshops for graduate students and postdocs at UC Berkeley in which participants learned common data science techniques and completed a Kaggle competition. I led a session introducing participants to Python using IPython notebooks. 
+
+\smallskip
+
+\years{2013}\emph{Compass Project}: I supervised students from underrepresented demographics in a semester-long project to measure the speed of light using a microwave, with an emphasis on experimental design and estimation of uncertainties. 
+
+\smallskip
+
+\years{2010}\emph{Physics 7B, ``Physics for Scientists and Engineers''}: I was a graduate student instructor, covering thermodynamics, electricity, and magnetism.
+
+\smallskip
+
+\years{2009}\emph{Physics 8B, ``Introductory Physics''}: I was a graduate student instructor, covering electricity, magnetism, electromagnetic waves, optics, and modern physics.
+
+\smallskip 
+
+\years{2008-2009}\emph{Society of Physics Students}: I was the president of the University of Chicago chapter of the Society of Physics Students. 
+
+\smallskip
+
+\years{2009}\emph{SPLASH! Chicago}: I taught a 1-day course on cosmology to local high school students. 
+
+
+%\section*{Other Activities}
+
+%\years{2014}\emph{Kaggle Seizure Detection Challenge} I participated in a Kaggle competition to detect the onset of seizures in dogs and humans using intracranial EEGs. I placed 36$^{\mathrm{th}}$ out of 200 participants. 
+
+
+\vfill{} % Whitespace before final footer
+
+%----------------------------------------------------------------------------------------
+%	FINAL FOOTER
+%----------------------------------------------------------------------------------------
+
+\begin{center}
+{\scriptsize Last updated: \today}
+\end{center}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
